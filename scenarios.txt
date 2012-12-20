@@ -1,0 +1,18 @@
+
+
+Mitä skenaarioita / juttuja vois tehdä:
+- Linqpad?
+- switchLatest
+- mocha testit, joita vois korjata
+- kaksi hakua yhtä aikaa
+-
+
+Extrassa olevia lupauksia:
+Rx perusprinsiipit
+miksi mun stream kuoli? Rx virhekäsittely.
+hot / cold observable?
+miksei takeLast palauttanut mitään?
+Subject, replaysubject
+Rx Kombinatoriikkaa
+Ajax streamit, switchLatest, selectMany yms. yleiset tosielämässä usein vastaantulevat kamat
+Miten Rx:ää kantsii tehdä, millaisella "työtavalla" tulee profittia? (marble diagrams! repl!)
