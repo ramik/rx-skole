@@ -16,7 +16,9 @@ html
     script(type='text/javascript', src="/js/lib/handlebars/handlebars-1.0.rc.1.js")
 
     body
-    block content
+    div(id="slide-content")
+        block content
 
-    a(id="previous", href="/presentation/#{previous_slide}") Edellinen
-    a(id="next", href="/presentation/#{next_slide}") Seuraava
+        div(class="slide-footer")
+            a(id="previous", href="/presentation/#{previous_slide}") Edellinen
+            a(id="next", href="/presentation/#{next_slide}") Seuraava

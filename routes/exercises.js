@@ -6,6 +6,6 @@ exports.exercise = function(req, res){
 exports.presentation = function(req, res){
     var slide_id = parseInt(req.route.params.id);
     res.render('slides/slide' + slide_id,
-        { previous_slide: Math.max(0, slide_id - 1),
+        { previous_slide: Math.max(1, slide_id - 1),
           next_slide: slide_id + 1 });
 };

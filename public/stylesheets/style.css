@@ -1,4 +1,52 @@
-button {
+#slide-content {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  background-color: rgba(180, 152, 255, 0.16);
+  border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+}
+#slide-content button {
   width: 150px;
   height: 25px;
+}
+#slide-content .slide-footer {
+  width: 250px;
+  height: 30px;
+  position: absolute;
+  bottom: 25px;
+  left: 375px;
+  background-color: #bb81db;
+  border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+}
+#slide-content .slide-footer a#previous {
+  margin-left: 50px;
+}
+#slide-content .slide-footer a {
+  color: #ffffff;
+  float: left;
+  margin-top: 5px;
+  width: 100px;
+  top: 5px;
 }

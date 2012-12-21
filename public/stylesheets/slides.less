@@ -1,0 +1,35 @@
+#slide-content {
+  @panel-width: 1000px;
+  @panel-height: 600px;
+  .size(@panel-height, @panel-width);
+  position: relative;
+  background-color: rgba(180, 152, 255, 0.16);
+  .rounded-corners(10px);
+
+  button {
+    .size(25px, 150px);
+  }
+
+  .slide-footer {
+    @footer-width: 250px;
+    @link-margin: 50px;
+    .size(30px, @footer-width);
+    position: absolute;
+    bottom: 25px;
+    left: @panel-width / 2 - @footer-width / 2;
+    background-color: #bb81db;
+    .rounded-corners(5px);
+
+    a#previous {
+      margin-left: @link-margin;
+    }
+
+    a {
+      color: #ffffff;
+      float: left;
+      margin-top: 5px;
+      width: (@footer-width - @link-margin) / 2;
+      top: 5px;
+    }
+  }
+}
