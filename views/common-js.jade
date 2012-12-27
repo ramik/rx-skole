@@ -1,0 +1,27 @@
+doctype 5
+html
+  head
+    title = title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='/js/lib/jquery/jquery-1.8.3.min.js')
+    script(type='text/javascript', src='/js/lib/rx/rx.js')
+    script(type='text/javascript', src="/js/lib/rx/rx.aggregates.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.binding.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.coincidence.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.experimental.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.joinpatterns.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.testing.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.time.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.jquery.js")
+    script(type='text/javascript', src="/js/lib/handlebars/handlebars-1.0.rc.1.js")
+
+    body
+    block content
+    div(id="result-visualisation")
+        ul(id="result-list")
+        button(type="button", id="clear-result") Tyhjennä tulospaneeli
+
+    script(id="result-add-template", type="text/x-handlebars-template")
+        li {{content}}
+
+    script(type='text/javascript', src="/js/result-panel.js")

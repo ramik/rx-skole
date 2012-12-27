@@ -1,0 +1,33 @@
+doctype 5
+html
+    head
+        title = 'Rxjs skolen testirunner'
+    link(rel='stylesheet', href='/js/lib/mocha/mocha.css')
+    script(type='text/javascript', src='/js/lib/jquery/jquery-1.8.3.min.js')
+    script(type='text/javascript', src='/js/lib/rx/rx.js')
+    script(type='text/javascript', src="/js/lib/rx/rx.aggregates.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.binding.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.coincidence.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.experimental.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.joinpatterns.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.testing.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.time.js")
+    script(type='text/javascript', src="/js/lib/rx/rx.jquery.js")
+    script(type='text/javascript', src="/js/lib/handlebars/handlebars-1.0.rc.1.js")
+    script(type='text/javascript', src="/js/lib/mocha/mocha.js")
+    script
+        mocha.setup('bdd')
+
+    script(type='text/javascript', src="/js/lib/mocha/chai.js")
+
+    script(type='text/javascript', src='/js/exercise1.js')
+    script(type='text/javascript', src="/js/spec/exercise1-spec.js")
+
+
+    script
+        onload = function(){
+            var runner = mocha.run();
+        };
+
+    body
+    div(id='mocha')

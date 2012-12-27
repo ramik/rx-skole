@@ -31,6 +31,7 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/spec/runner', routes.spec)
 app.get('/exercises/:id', exercises.exercise);
 app.get('/presentation/:id', exercises.presentation);
 
