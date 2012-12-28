@@ -1,9 +1,21 @@
 var exercise1 = {
     greaterOrEqualThan5: function(stream) {
-        return stream.where(function(x){ return x > 4; });
+        return stream;
     },
 
     addsOneToItems: function(stream) {
-        return stream.select(function (x) { return x + 1; });
+        return stream;
+    },
+
+    pickupFromBoth: function(stream, another) {
+        return stream;
+    },
+
+    streamConcatenation: function(stream, another) {
+        return stream;
+    },
+
+    leGrandeFinale: function(stream, another, last) {
+        return stream;
     }
 };
