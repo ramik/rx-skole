@@ -31,9 +31,10 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
-app.get('/spec/runner', routes.spec)
+app.get('/spec/runner', routes.spec);
 app.get('/exercises/:id', exercises.exercise);
 app.get('/presentation/:id', exercises.presentation);
+app.get('/exercises/services/echo/:echo', exercises.echo);
 
 
 http.createServer(app).listen(app.get('port'), function(){

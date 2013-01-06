@@ -1,6 +1,7 @@
 #slide-content {
   @panel-width: 1000px;
   @panel-height: 600px;
+  @font-color: #464369;
   .size(@panel-height, @panel-width);
   position: relative;
   background-color: rgba(180, 152, 255, 0.16);
@@ -8,6 +9,35 @@
 
   button {
     .size(25px, 150px);
+  }
+
+  h1 {
+    float: left;
+    padding-top: 150px;
+    padding-left: @panel-width / 4;
+    color: @font-color;
+    font-size: 80px;
+  }
+
+  h2 {
+    float: left;
+    margin-left: 10px;
+    color: @font-color;
+    font-size: 45px;
+    width:95%;
+    border-bottom:2px solid @font-color;
+  }
+
+  ul {
+    float: left;
+    color: @font-color;
+    font-size: 40px;
+    margin-left: 10px;
+    li {
+      padding-left: 15px;
+      margin-left: 30px;
+      width: 800px;
+    }
   }
 
   .slide-footer {
@@ -31,5 +61,7 @@
       width: (@footer-width - @link-margin) / 2;
       top: 5px;
     }
+
+
   }
 }

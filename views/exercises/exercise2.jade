@@ -2,5 +2,20 @@ extends ../layout
 
 block content
   h1 #{title}
+  h2 Rakenna full blown palvelu ajax servicen päälle.
+
+  p.
+   Osoitteessa /exercises/services/echo/:given_parameter sijaitsee extra nasty palvelu, joka
+   toimii monessa mielessä epäluotettavasti. Välillä vastauksen saaminen kestää huomattavan
+   kauan ja palvelusta tulee myös suoria palveluvirheitä.
+
+  ul Tehtävänanto:
+    li tekstiboxiin kirjoitettu teksti lähettää sen palveluun
+    li palvelun palauttama tulos näytetään tulospaneelissa
+    li mikäli tapahtuu virhe, käsitellään ja näytetään tulospaneelissa virheviestinä "VR:n verkkokauppa!"
+    li tulospaneelissa pitää näkyä kaikissa tapauksissa oikea tulos
+    li käyttäjän syötteet tulee viivästää, ettei palveluun lähde mitään kesken kirjoituksen
+
+  p Voit käyttää apuna tulostuksessa ("tulospaneeliin") valmista funktiota addResultData(string).
 
   input(type="text", id="input")

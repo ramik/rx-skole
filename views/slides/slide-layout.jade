@@ -22,3 +22,10 @@ html
         div(class="slide-footer")
             a(id="previous", href="/presentation/#{previous_slide}") Edellinen
             a(id="next", href="/presentation/#{next_slide}") Seuraava
+
+    script(type='text/javascript')
+        var g = $('body').keyupAsObservable()
+            .select(function(x) { return x.originalEvent.keyCode })
+
+        g.where(function(x) { return x == 37 }).subscribe(function() { window.location.href = $('#previous').attr('href') })
+        g.where(function(x) { return x == 39 }).subscribe(function() { window.location.href = $('#next').attr('href') })

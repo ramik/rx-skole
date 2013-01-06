@@ -9,6 +9,9 @@ Mitä skenaarioita / juttuja vois tehdä:
 
 Extrassa olevia lupauksia:
 Rx perusprinsiipit
+- enumerable <-> observable "konversio"
+- Miten observableja luodaan
+-
 miksi mun stream kuoli? Rx virhekäsittely.
 hot / cold observable?
 miksei takeLast palauttanut mitään?
@@ -16,3 +19,13 @@ Subject, replaysubject
 Rx Kombinatoriikkaa
 Ajax streamit, switchLatest, selectMany yms. yleiset tosielämässä usein vastaantulevat kamat
 Miten Rx:ää kantsii tehdä, millaisella "työtavalla" tulee profittia? (marble diagrams! repl!)
+
+Exercise 1: käsittelee select, where, merge, concat  OK!
+Exercise 2: combineLatest, zip, startWith.    OK!
+Exercise 3: virhekäsittely ja selectMany + switchlatest  OK!
+Exercise 4: scan, sample, window...
+Exercise : publish / connect ??
+Exercise X : ajax + switchlatest
+tee echo palvelu, joka sotkee suoritusjärjestystä ja palauttaa virheitä.
+
+Exercise bonus: translate bing / google ... amb etc.

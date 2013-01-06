@@ -3,4 +3,12 @@ extends ../layout
 block content
   h1 #{title}
 
+  ul Tehtävänanto:
+    li tekstikenttään syötetään tekstiä
+    li tulosta tulospaneeliin teksti ja sen pituus (teksti, pituus x)
+    li mutta vain siinä tapauksessa, että pituus > 4
+    li käyttäjältä estetään välilyönnin syöttäminen
+
+  p. voit käyttää apuna tekstipaneeliin tulostamiseen addResultData(string) funktiota.
+
   input(type="text", id="input")

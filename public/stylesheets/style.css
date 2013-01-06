@@ -20,6 +20,32 @@
   width: 150px;
   height: 25px;
 }
+#slide-content h1 {
+  float: left;
+  padding-top: 150px;
+  padding-left: 250px;
+  color: #464369;
+  font-size: 80px;
+}
+#slide-content h2 {
+  float: left;
+  margin-left: 10px;
+  color: #464369;
+  font-size: 45px;
+  width: 95%;
+  border-bottom: 2px solid #464369;
+}
+#slide-content ul {
+  float: left;
+  color: #464369;
+  font-size: 40px;
+  margin-left: 10px;
+}
+#slide-content ul li {
+  padding-left: 15px;
+  margin-left: 30px;
+  width: 800px;
+}
 #slide-content .slide-footer {
   width: 250px;
   height: 30px;
