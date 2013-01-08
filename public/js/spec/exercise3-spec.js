@@ -75,7 +75,6 @@ describe("Exercise 3", function() {
 
             subject.onNext('a');
             secondSubject.onError('lulz');
-            secondSubject.onCompleted();
             subject.onNext('b');
             subject.onNext('change');
             thirdSubject.onNext(['1?', '2?']);
