@@ -1,13 +1,15 @@
 extends slide-layout
 
 block content
-  h2 Mikä on Rx (reactive extensions)?
+  h2 Perusprinsiipit
   ul
-      li funktionaalinen reaktiivinen ohjelmointimalli
+      li Observable
           ul
-              li push pohjainen
-              li 'tapahtumia' käsitellään funktionaalisen ohjelmoinnin keinoin
-      li tässä skolessa käytetään RxJs toteutusta
+              li onNext
+              li onComplete
+              li onError
+      li Observer
           ul
-              li Microsoftin tekemä
-              li Lähdekoodit saatavana
+              li subscription
+      li Observablejen kombinointi
+
